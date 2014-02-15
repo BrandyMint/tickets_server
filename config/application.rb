@@ -24,5 +24,8 @@ module Tickets
 
     config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
+    config.paths.add "app/api", glob: "**/*.rb"
+    config.autoload_paths += Dir["#{Rails.root}/app/api/*"]
   end
 end

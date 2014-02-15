@@ -1,4 +1,8 @@
 Tickets::Application.routes.draw do
+  # scope subdomain: 'api', constraints: { subdomain: 'api' } do
+  mount GrapeSwaggerRails::Engine => '/api'
+  mount API => '/api'
+
   self.default_url_options Settings.app.default_url_options.symbolize_keys
 
   devise_for :admin_users, ActiveAdmin::Devise.config

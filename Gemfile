@@ -5,6 +5,9 @@ gem 'rails', '~> 4.0.0'
 #gem 'arel',      github: 'rails/arel'
 # gem 'activerecord-deprecated_finders', github: 'rails/activerecord-deprecated_finders'
 
+gem 'grape'
+gem 'grape-swagger-rails'
+
 # Use postgresql as the database for ActiveRecord
 gem 'pg'
 gem 'pg_array_parser'
